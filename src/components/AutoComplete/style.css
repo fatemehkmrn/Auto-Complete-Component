@@ -1,0 +1,37 @@
+.autocomplete {
+  height: 300px;
+  width: 500px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background: linear-gradient(white, rgb(202, 233, 162));
+  margin: 50px auto;
+}
+h3 {
+  color: rgb(27, 27, 151);
+  text-align: center;
+}
+input {
+  width: 240px;
+  height: 30px;
+  margin: 50px 130px 0 130px;
+  border: none;
+  text-indent: 15px;
+}
+
+ul {
+  width: 240px;
+  text-decoration: none;
+  background-color: rgb(232, 247, 242);
+  margin: 0 auto;
+  padding: 10px 0;
+  list-style-type: none;
+}
+li {
+  padding: 5px 15px;
+  font-weight: bold;
+}
+li:hover {
+  color: rgb(66, 66, 185);
+  cursor: pointer;
+  font-weight: bold;
+}

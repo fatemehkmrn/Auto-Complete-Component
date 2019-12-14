@@ -1,26 +1,32 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
 
+// Components
+import AutoComplete from "./components/AutoComplete";
+
+const colors = [
+  "blue",
+  "green",
+  "pink",
+  "plum",
+  "aqua",
+  "biege",
+  "purple",
+  "white",
+  "gray",
+  "black",
+  "red",
+  "yellow",
+  "orange",
+  "brown",
+  "lime",
+  "silver"
+];
 const App: React.FC = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <React.Fragment>
+      <AutoComplete options={colors} />
+    </React.Fragment>
   );
-}
+};
 
 export default App;
